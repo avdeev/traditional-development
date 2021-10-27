@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Традиционная разработка</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="shower/themes/ribbon/styles/styles.css">
+    <style>
+        .shower {
+            --slide-ratio: calc(16 / 9);
+            --ribbon-size: 40px;
+			--slide-side: 41px;
+        }
+
+        .progress::before {
+			background-color: #ff0000;
+        }
+
+        .slide {
+            padding-top: 51px;
+            background-image: url("pictures/slide-cover.png");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: center;
+        }
+
+        .slide.clear {
+            background-image: none;
+        }
+
+        .slide::after {
+			top: auto;
+			bottom: 10px;
+			left: auto;
+			right: 30px;
+            background: none;
+			color: #000;
+        }
+
+		.slide h2 {
+			color: #000;
+			font-size: 60px;
+		}
+
+        .slide h2.shout {
+			font-size: 120px;
+			transform: translate(-50%, -50%);
+			left: 50%;
+			width: 80%;
+        }
+
+		.slide .brand {
+			color: #ff0000;
+		}
+
+		.slide ol, .slide ul {
+			padding-left: 40px;
+		}
+
+		.slide li {
+			font-size: 28px;
+		}
+
+		.slide pre {
+			font-size: 30px;
+		}
+
+		.cover {
+			z-index: 1;
+		}
+    </style>
+    </style>
+</head>
+<body class="shower list">
+
+    <header class="caption">
+        <h1>Традиционная разработка</h1>
+        <p><a href="https://alexey-avdeev.com/">Алексей Авдеев</a>, <a href="https://mish.design/">Mish.Design</a></p>
+    </header>
+
+    <section class="slide clear" id="cover">
+        <div style="width: 640px; padding-top: 30px; margin-left: -10px;">
+            <h2>Традиционная разработка</h2>
+            <p><a href="https://alexey-avdeev.com/">Алексей Авдеев</a>, <a href="https://mish.design/">Mish.Design</a></p>
+        </div>
+        <style>
+			.shower #cover {
+				--slide-side: 60px;
+			}
+            #cover {
+				background: #fff url("pictures/title-cover.png") no-repeat center center;
+				background-size: contain;
+            }
+            #cover h2 {
+                margin: 0;
+                color: #000;
+                font-size: 62px;
+            }
+            #cover p {
+                margin: 18px 0 0;
+                color: #000;
+                font-size: 24px;
+            }
+            #cover p a {
+                color: #000;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2>👨‍💻 О себе</h2>
+
+        <ol>
+            <li>👨 Алексей Авдеев (<a href="https://twitter.com/avdeev_alexey">https://twitter.com/avdeev_alexey</a>)</li>
+            <li class="next">👔 CTO, руковожу разработкой</li>
+            <li class="next">🏙️ Из Нижнего Новгорода, работаю в Москве</li>
+            <li class="next">🌐 <a href="https://mish.design/">Mish.Design</a></li>
+            <li class="next">👴 Программирую с 2002 года</li>
+        </ol>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Разбор домашки</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Изучайте инструменты</h2>
+    </section>
+
+    <section class="slide">
+        <h2>Домашняя работа в группах</h2>
+		<ol>
+			<li>Создайте название и логотип своего проекта</li>
+			<li class="next">Создайте сайт для своего проекта</li>
+			<li class="next">Настройте сбор заявок с сайта</li>
+			<li class="next">Настройке аналитику</li>
+			<li class="next">Отправьте его на проверку преподавателю</li>
+		</ol>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Следующий урок: <span class="brand">традиционная разработка</span></h2>
+    </section>
+
+    <section class="slide">
+        <h2>👏 Спасибо!</h2>
+
+        <ul>
+            <li>👨 Алексей Авдеев</li>
+            <li>🌐 <a href="https://github.com/avdeev">github.com/avdeev</a></li>
+            <li>🌐 <a href="https://twitter.com/avdeev_alexey">twitter.com/avdeev_alexey</a></li>
+			<li>🌐 <a href="https://alexey-avdeev.com/no-code-and-low-code/">alexey-avdeev.com/no-code-and-low-code</a></li>
+            <li>🌐 <a href="https://mish.design/">Mish.Design</a></li>
+        </ul>
+
+        <img src="pictures/iam.jpeg" alt="я" style="height: 250px; position: absolute; right: 25px; top: 141px;">
+    </section>
+
+    <footer class="badge">
+        <a href="https://github.com/shower/shower">Fork me on GitHub</a>
+    </footer>
+
+    <div class="progress"></div>
+
+    <script src="shower/shower.js"></script>
+    <!-- Copyright © 2021 Yours Truly, Famous Inc. -->
+
+</body>
+</html>
