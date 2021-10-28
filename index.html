@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <title>Традиционная разработка</title>
+    <title>Традиционный подход к разработке</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="node_modules/@shower/ribbon/styles/styles.css">
@@ -9,11 +9,11 @@
         .shower {
             --slide-ratio: calc(16 / 9);
             --ribbon-size: 40px;
-			--slide-side: 41px;
+            --slide-side: 41px;
         }
 
         .progress::before {
-			background-color: #ff0000;
+            background-color: #ff0000;
         }
 
         .slide {
@@ -29,67 +29,67 @@
         }
 
         .slide::after {
-			top: auto;
-			bottom: 10px;
-			left: auto;
-			right: 30px;
+            top: auto;
+            bottom: 10px;
+            left: auto;
+            right: 30px;
             background: none;
-			color: #000;
+            color: #000;
         }
 
-		.slide h2 {
-			color: #000;
-			font-size: 60px;
-		}
+        .slide h2 {
+            color: #000;
+            font-size: 60px;
+        }
 
         .slide h2.shout {
-			font-size: 120px;
-			transform: translate(-50%, -50%);
-			left: 50%;
-			width: 80%;
+            font-size: 120px;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            width: 80%;
         }
 
-		.slide .brand {
-			color: #ff0000;
-		}
+        .slide .brand {
+            color: #ff0000;
+        }
 
-		.slide ol, .slide ul {
-			padding-left: 40px;
-		}
+        .slide ol, .slide ul {
+            padding-left: 40px;
+        }
 
-		.slide li {
-			font-size: 28px;
-		}
+        .slide li {
+            font-size: 28px;
+        }
 
-		.slide pre {
-			font-size: 30px;
-		}
+        .slide pre {
+            font-size: 30px;
+        }
 
-		.cover {
-			z-index: 1;
-		}
+        .cover {
+            z-index: 1;
+        }
     </style>
     </style>
 </head>
 <body class="shower list">
 
     <header class="caption">
-        <h1>Традиционная разработка</h1>
+        <h1>Традиционный подход к разработке</h1>
         <p><a href="https://alexey-avdeev.com/">Алексей Авдеев</a>, <a href="https://mish.design/">Mish.Design</a></p>
     </header>
 
     <section class="slide clear" id="cover">
         <div style="width: 640px; padding-top: 30px; margin-left: -10px;">
-            <h2>Традиционная разработка</h2>
+            <h2>Традиционный подход к разработке</h2>
             <p><a href="https://alexey-avdeev.com/">Алексей Авдеев</a>, <a href="https://mish.design/">Mish.Design</a></p>
         </div>
         <style>
-			.shower #cover {
-				--slide-side: 60px;
-			}
+            .shower #cover {
+                --slide-side: 60px;
+            }
             #cover {
-				background: #fff url("pictures/title-cover.png") no-repeat center center;
-				background-size: contain;
+                background: #fff url("pictures/title-cover.png") no-repeat center center;
+                background-size: contain;
             }
             #cover h2 {
                 margin: 0;
@@ -124,22 +124,117 @@
     </section>
 
     <section class="slide">
+        <h2 class="shout brand">Что мы разрабатываем</h2>
+    </section>
+
+    <section class="slide">
+        <h2>Цели ПО</h2>
+        <ol>
+            <li>Системное</li>
+            <li class="next">Вредоносное</li>
+            <li class="next"><b>Прикладное</b></li>
+        </ol>
+    </section>
+
+    <section class="slide">
+        <h2>Домен выполнения</h2>
+        <ol>
+            <li>Настольные приложения (Desktop apps)</li>
+            <li class="next">Сценарии JavaScript (Frontend)</li>
+            <li class="next">Серверное ПО (Backend)</li>
+            <li class="next">Плагины</li>
+            <li class="next">Встроенное ПО (Embedded)</li>
+            <li class="next">Микрокод</li>
+        </ol>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout brand">Веб</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout brand">HTTP</h2>
+    </section>
+
+    <section class="slide">
+        <img class="cover w" src="pictures/http-protocol.webp" alt="" style="width: 80%;">
+    </section>
+
+    <section class="slide">
+        <img class="cover w" src="pictures/Client-server-chain.png" alt="" style="width: 80%;">
+    </section>
+
+    <section class="slide clear">
+        <img class="cover h" src="pictures/HTTP & layers.png" alt="">
+    </section>
+
+    <section class="slide">
+        <img class="cover w" src="pictures/HTTP_Request.png" alt="" style="width: 80%;">
+    </section>
+
+    <section class="slide">
+        <img class="cover w" src="pictures/HTTP_Response.png" alt="" style="width: 80%;">
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Postman</h2>
+    </section>
+
+    <section class="slide clear">
+        <img class="cover w" src="pictures/postman.png" alt="">
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">
+            <a href="https://postwoman.io/">postwoman.io</a>
+        </h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout brand">Фронтенд</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout brand">Фронтенд</h2>
+    </section>
+
+    <section class="slide">
+        <img class="cover w" src="pictures/299-2994011_front-end-development-logos-hd-png-download.png" alt="">
+    </section>
+
+    <section class="slide">
+        <h2 class="shout brand">Мобильная разработка</h2>
+    </section>
+
+    <section class="slide">
+      <img class="cover h" src="pictures/Top-7-Programming-language-for-Mobile-App-Development-in-2019-–-Binary-Informatics.jpeg" alt="">
+    </section>
+
+    <section class="slide">
+        <h2 class="shout brand">Бэкенд</h2>
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/67337449.jpeg" alt="">
+    </section>
+
+    <section class="slide">
         <h2 class="shout">Изучайте инструменты</h2>
     </section>
 
     <section class="slide">
-        <h2>Домашняя работа в группах</h2>
-		<ol>
-			<li>Создайте название и логотип своего проекта</li>
-			<li class="next">Создайте сайт для своего проекта</li>
-			<li class="next">Настройте сбор заявок с сайта</li>
-			<li class="next">Настройке аналитику</li>
-			<li class="next">Отправьте его на проверку преподавателю</li>
-		</ol>
+        <h2>Домашняя работа</h2>
+        <ol>
+            <li>Создайте название и логотип своего проекта</li>
+            <li class="next">Создайте сайт для своего проекта</li>
+            <li class="next">Настройте сбор заявок с сайта</li>
+            <li class="next">Настройке аналитику</li>
+            <li class="next">Отправьте его на проверку преподавателю</li>
+        </ol>
     </section>
 
     <section class="slide">
-        <h2 class="shout">Следующий урок: <span class="brand">традиционная разработка</span></h2>
+        <h2 class="shout">Следующий урок: <span class="brand">Low-Code</span></h2>
     </section>
 
     <section class="slide">
@@ -149,7 +244,7 @@
             <li>👨 Алексей Авдеев</li>
             <li>🌐 <a href="https://github.com/avdeev">github.com/avdeev</a></li>
             <li>🌐 <a href="https://twitter.com/avdeev_alexey">twitter.com/avdeev_alexey</a></li>
-			<li>🌐 <a href="https://alexey-avdeev.com/no-code-and-low-code/">alexey-avdeev.com/no-code-and-low-code</a></li>
+            <li>🌐 <a href="https://alexey-avdeev.com/no-code-and-low-code/">alexey-avdeev.com/no-code-and-low-code</a></li>
             <li>🌐 <a href="https://mish.design/">Mish.Design</a></li>
         </ul>
 
